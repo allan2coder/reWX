@@ -1,0 +1,21 @@
+{
+  "name": "wx",
+  "description": "wx",
+  "main": "index.js",
+  "authors": [
+    "Allan <allan91coder@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

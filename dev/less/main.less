@@ -1,0 +1,145 @@
+@3: #333;
+@6: #666;
+@9: #999;
+@fff: #fff;
+@btn: #ffad39;
+@f10: 10px;
+@f12: 12px;
+@f14: 14px;
+@f16: 16px;
+@border: 1px solid #ddd;
+@shadow: 1px 1px 2px #ddd;
+
+/*头部*/
+
+header {
+    background-color: #eceae8;
+    height: 45px;
+    overflow: hidden;
+    box-shadow: @shadow;
+    padding: 11px 0;
+    box-sizing: border-box;
+    .fl {
+        a {
+            display: block;
+            padding: 3px;
+            img {
+                width: 12px;
+                vertical-align: middle;
+            }
+        }
+    }
+    h1 {
+        font-size: 16px;
+        color: @6;
+        text-align: center;
+        line-height: 22px;
+        width: 100%;
+        margin-left: -24px;
+    }
+}
+
+/*评价页面*/
+
+.section {
+    .top-title {
+        background-color: #eaeaef;
+        padding: 12px 0;
+    }
+    .assess-list {
+        ul {
+            li {
+                padding: 15px 0 22px;
+                .user-head {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+                }
+                .user-name {
+                    font-size: 12px;
+                    .name {
+                        color: @3;
+                    }
+                    .desc {
+                        color: #707a83;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*公用*/
+
+
+/*星星评分*/
+
+.score {
+    span {
+        background-image: url(../img/gary_star_bg.png);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: 0;
+        width: 64px;
+        /*height: 12px;*/
+        display: inline-block;
+        margin-left: 4px;
+        b {
+            width: 64px;
+            background-image: url(../img/orange_star_front.png);
+            background-size: 64px;
+            background-repeat: no-repeat;
+            background-position: 0;
+            height: 11px;
+            display: inline-block;
+        }
+    }
+}
+.container {
+    padding: 0 15px;
+}
+
+/*背景*/
+
+body {
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+select {
+    outline: medium none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.text-center {
+    text-align: center;
+}
+.p10 {
+    padding: 0 10px;
+}
+.top_title {
+    width: calc(100% - 110px);
+    width: -webkit-calc(100% - 110px);
+    width: -moz-calc(100% - 110px);
+    width: -o-calc(100% - 110px);
+    margin-left: 56px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
