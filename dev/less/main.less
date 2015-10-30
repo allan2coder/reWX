@@ -8,15 +8,16 @@
 @f14: 14px;
 @f16: 16px;
 @border: 1px solid #ddd;
-@shadow: 1px 1px 2px #ddd;
+@shadow: 0px 2px 4px #ddd;
+
+/*html {font-size: 62.5%;} */
+
 
 /*头部*/
 
 header {
-    background-color: #eceae8;
     height: 45px;
     overflow: hidden;
-    box-shadow: @shadow;
     padding: 11px 0;
     box-sizing: border-box;
     .fl {
@@ -38,19 +39,268 @@ header {
         margin-left: -24px;
     }
 }
+.index-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background: url(../img/banner_top.png) no-repeat;
+    background-size: 100%;
+    .fl {
+        a {
+            img {
+                width: 16px;
+                height: 12px;
+            }
+        }
+    }
+    .fr {
+        a {
+            font-size: @f14;
+            color: #fff;
+            i {
+                width: 10px;
+                height: 5px;
+                background: url(../img/arrow_down.png) no-repeat;
+                display: inline-block;
+                background-size: 100%;
+                margin-left: 10px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+/*首页*/
+.banner {
+    img {
+        width: 100%;
+        display: block;
+    }
+    .swiper-pagination-bullet-active{
+        background: rgba(255,255,255,0.5);
+    }
+}
+.menu {
+    padding: 26px 0;
+    background: #fff;
+    box-shadow: @shadow;
+    margin-bottom: 16px;
+    ul {
+        li {
+            width: 23%;
+            display: inline-block;
+            text-align: center;
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-bottom: 14px;
+                }
+                small {
+                    display: block;
+                    font-size: 12px;
+                    color: #333;
+                }
+            }
+            .order_online img{
+                width: 22px;
+                height: 22px;
+            }
+            .vip img, .fast_trading img{
+                width: 23px;
+                height: 18px;
+            }
+            .coupon img{
+                width: 28px;
+                height: 18px;
+            }
+            .community img{
+                width: 24px;
+                height: 23px;
+            }
+            .game img{
+                width: 22px;
+                height: 23px;
+            }
+            .wine img{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    ul:first-child {
+        margin-bottom: 30px;
+    }
+}
+.shop-info {
+    position: relative;
+    .shade {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 140px;
+    }
+    img {
+        width: 100%;
+        height: 140px;
+        overflow: hidden;
+        display: block;
+    }
+    .info {
+        position: absolute;
+        top: 20px;
+        h1 {
+            font-size: 20px;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        .score {
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+        p {
+            font-size: 12px;
+            color: #fff;
+        }
+        .more-info {
+            margin-bottom: 8px;
+        }
+        button {
+            height: 20px;
+            line-height: 20px;
+            padding: 0;
+            font-size: 10px;
+        }
+        .check {
+            width: 58px;
+            margin-right: 4px;
+            background: -webkit-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+            background: -o-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+            background: -moz-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+            background: gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+        }
+        .display {
+            width: 70px;
+            background: -webkit-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+            background: -o-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+            background: -moz-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+            background: gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+        }
+    }
+}
+.activity {
+    margin-bottom: 14px;
+    box-shadow: @shadow;
+    h2 {
+        font-size: 12px;
+        color: @3;
+        padding: 16px 14px 10px;
+    }
+    .articel {
+        background: #fff;
+        .topbar {
+            padding: 6px 0;
+            border-bottom: @border;
+            .fl {
+                letter-spacing: 6px;
+                i {
+                    width: 7px;
+                    height: 10px;
+                    background: url(../img/limit_sell.png) no-repeat;
+                    background-size: 100%;
+                }
+            }
+            .fr {
+                i {
+                    width: 12px;
+                    height: 12px;
+                    background: url(../img/clock_gray.png) no-repeat;
+                    background-size: 100%;
+                }
+            }
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 6px;
+            }
+        }
+        .content {
+            padding: 15px 14px 10px;
+            .act-name {
+                font-size: 14px;
+                color: @3;
+                span {
+                    font-size: 10px;
+                    color: @9;
+                    margin-left: 4px;
+                }
+            }
+            .price {
+                .fl{
+                    line-height: 24px;
+                }
+                .fr {
+                    color: #f15d52;
+                    font-size: @f16;
+                }
+                em{
+                    font-style: normal;
+                    font-size: 12px;
+                }
+            }
+            small {
+                font-size: 12px;
+                color: @9;
+                display: block;
+            }
+            p {
+                font-size: 12px;
+                color: @9;
+                display: block;
+                width: 100%;
+            }
+            .out-price {
+                text-align: right;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+.special-offer,
+.oth {
+    .articel .topbar .fl {
+        i {
+            width: 10px;
+            height: 10px;
+            background: url(../img/special-offer.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+    small{
+        margin-bottom: 18px;
+    }
+}
 
 /*评价页面*/
 
 .section {
     .top-title {
-        background-color: #eaeaef;
-        padding: 12px 0;
+        p {
+            border-bottom: @border;
+            padding: 10px;
+        }
     }
     .assess-list {
         ul {
             li {
                 padding: 15px 0 22px;
+                div {
+                    display: inline-block;
+                }
                 .user-head {
+                    vertical-align: top;
+                    margin-right: 8px;
                     img {
                         width: 40px;
                         height: 40px;
@@ -59,23 +309,51 @@ header {
                     }
                 }
                 .user-name {
+                    width: ~"calc(100% - 52px)";
+                    width: ~"-moz-calc(100% - 52px)";
+                    width: ~"-webkit-calc(100% - 52px)";
+                    width: ~"-o-calc(100% - 52px)";
                     font-size: 12px;
                     .name {
                         color: @3;
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        span {
+                            color: #707a83;
+                            font-size: 12px;
+                            i {
+                                width: 10px;
+                                height: 10px;
+                                background: url(../img/clock.png)no-repeat;
+                                background-size: 100%;
+                                display: inline-block;
+                                margin-right: 8px;
+                            }
+                        }
                     }
                     .desc {
                         color: #707a83;
+                        margin-bottom: 10px;
                     }
                 }
             }
         }
     }
+    .no-assess {
+        padding-top: 50%;
+        img {
+            width: 66px;
+            margin-bottom: 10px;
+        }
+        small {
+            font-size: 12px;
+            color: @6;
+            display: block;
+        }
+    }
 }
 
 /*公用*/
-
-
-/*星星评分*/
 
 .score {
     span {
@@ -86,24 +364,22 @@ header {
         width: 64px;
         /*height: 12px;*/
         display: inline-block;
-        margin-left: 4px;
+        margin-left: 6px;
         b {
             width: 64px;
             background-image: url(../img/orange_star_front.png);
             background-size: 64px;
             background-repeat: no-repeat;
             background-position: 0;
-            height: 11px;
+            height: 8px;
             display: inline-block;
         }
     }
 }
 .container {
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 14px;
 }
-
-/*背景*/
-
 body {
     font-size: 14px;
     color: #333;
@@ -129,17 +405,4 @@ select {
 }
 .text-center {
     text-align: center;
-}
-.p10 {
-    padding: 0 10px;
-}
-.top_title {
-    width: calc(100% - 110px);
-    width: -webkit-calc(100% - 110px);
-    width: -moz-calc(100% - 110px);
-    width: -o-calc(100% - 110px);
-    margin-left: 56px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }

@@ -1,0 +1,123 @@
+.text-center,
+header h1 {
+    text-align: center
+}
+html {
+    font-size: 0.2rem;
+    font-size: 70%
+}
+header {
+    background-color: #eceae8;
+    height: 2.25rem;
+    border: 1px solid red;
+    overflow: hidden;
+    box-shadow: 1px 1px 0.02rem #ddd;
+    padding: 0.11rem 0;
+    box-sizing: border-box
+}
+header .fl a {
+    display: block;
+    padding: 0.03rem
+}
+header .fl a img {
+    width: 0.12rem;
+    vertical-align: middle
+}
+header h1 {
+    font-size: 0.16rem;
+    color: #666;
+    line-height: 0.22rem;
+    width: 100%;
+    margin-left: -0.24rem
+}
+.section .top-title {
+    background-color: #eaeaef;
+    padding: 0.12rem 0
+}
+.section .assess-list ul li {
+    padding: 0.15rem 0 0.22rem
+}
+.section .assess-list ul li div {
+    display: inline-block
+}
+.section .assess-list ul li .user-head {
+    vertical-align: top
+}
+.section .assess-list ul li .user-head img {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    overflow: hidden
+}
+.section .assess-list ul li .user-name {
+    width: calc(100% - 0.48rem);
+    width: -moz-calc(100% - 0.48rem);
+    width: -webkit-calc(100% - 0.48rem);
+    width: -o-calc(100% - 0.48rem);
+    font-size: 0.12rem
+}
+.section .assess-list ul li .user-name .name {
+    color: #333;
+    margin-bottom: 0.15rem;
+    font-size: 0.12rem
+}
+.section .assess-list ul li .user-name .name span {
+    color: #707a83;
+    font-size: 0.1rem
+}
+.section .assess-list ul li .user-name .name span i {
+    width: 0.1rem;
+    height: 0.1rem;
+    background: url(../img/clock.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 0.08rem
+}
+.score span,
+.score span b {
+    width: 0.64rem;
+    background-size: 0.64rem;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: inline-block
+}
+.section .assess-list ul li .user-name .desc {
+    color: #707a83;
+    margin-bottom: 0.1rem
+}
+.score span {
+    background-image: url(../img/gary_star_bg.png);
+    margin-left: 0.04rem
+}
+.score span b {
+    background-image: url(../img/orange_star_front.png);
+    height: 0.11rem
+}
+.container {
+    padding: 0 0.15rem
+}
+body {
+    color: #333;
+    background: #fff
+}
+select {
+    outline: 0
+}
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+.p10 {
+    padding: 0 0.1rem
+}

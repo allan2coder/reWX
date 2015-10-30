@@ -13,12 +13,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
 }
 body {
-    line-height: 1;
+    /*line-height: 1;*/
 }
 ol, ul {
     list-style: none;
@@ -59,7 +58,6 @@ a:active, a:focus{ outline:none; }
 /* font-family */
 
 body {
-    background-color: #ecedee;
     font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "PingFang SC", "Source Han Sans CN", "Source Han Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "ST Heiti", "SimHei";
 }
 button{
