@@ -20,6 +20,7 @@ header {
     overflow: hidden;
     padding: 11px 0;
     box-sizing: border-box;
+    background: #fff;
     .fl {
         a {
             display: block;
@@ -28,6 +29,16 @@ header {
                 width: 12px;
                 vertical-align: middle;
             }
+            .back {
+                width: 8px;
+                height: 13px;
+            }
+        }
+    }
+    .fr {
+        a {
+            color: @9;
+            font-size: @f14;
         }
     }
     h1 {
@@ -36,7 +47,7 @@ header {
         text-align: center;
         line-height: 22px;
         width: 100%;
-        margin-left: -24px;
+        margin-left: -16px;
     }
 }
 .index-header {
@@ -71,13 +82,14 @@ header {
 }
 
 /*首页*/
+
 .banner {
     img {
         width: 100%;
         display: block;
     }
-    .swiper-pagination-bullet-active{
-        background: rgba(255,255,255,0.5);
+    .swiper-pagination-bullet-active {
+        background: rgba(255, 255, 255, 0.5);
     }
 }
 .menu {
@@ -102,27 +114,28 @@ header {
                     color: #333;
                 }
             }
-            .order_online img{
+            .order_online img {
                 width: 22px;
                 height: 22px;
             }
-            .vip img, .fast_trading img{
+            .vip img,
+            .fast_trading img {
                 width: 23px;
                 height: 18px;
             }
-            .coupon img{
+            .coupon img {
                 width: 28px;
                 height: 18px;
             }
-            .community img{
+            .community img {
                 width: 24px;
                 height: 23px;
             }
-            .game img{
+            .game img {
                 width: 22px;
                 height: 23px;
             }
-            .wine img{
+            .wine img {
                 width: 22px;
                 height: 22px;
             }
@@ -171,21 +184,16 @@ header {
             line-height: 20px;
             padding: 0;
             font-size: 10px;
+            letter-spacing: .5px;
+            color: #fff;
+            border-radius: 2px;
         }
         .check {
             width: 58px;
             margin-right: 4px;
-            background: -webkit-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
-            background: -o-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
-            background: -moz-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
-            background: gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
         }
         .display {
             width: 70px;
-            background: -webkit-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
-            background: -o-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
-            background: -moz-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
-            background: gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
         }
     }
 }
@@ -237,14 +245,14 @@ header {
                 }
             }
             .price {
-                .fl{
+                .fl {
                     line-height: 24px;
                 }
                 .fr {
                     color: #f15d52;
                     font-size: @f16;
                 }
-                em{
+                em {
                     font-style: normal;
                     font-size: 12px;
                 }
@@ -277,11 +285,245 @@ header {
             background-size: 100%;
         }
     }
-    small{
+    small {
         margin-bottom: 18px;
     }
 }
 
+/* 预订成功 */
+
+.sunglasses-man {
+    margin-top: 14px;
+    position: relative;
+    z-index: -1;
+    top: 5px;
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 26px;
+    }
+}
+.orderinfo {
+    .info-wrap {
+        background: url(../img/orderinfo_bg.png)no-repeat;
+        background-size: 100%;
+        .info {
+            padding: 40px 14px 16px;
+            border-bottom: @border;
+            h1 {
+                font-size: 20px;
+            }
+            .package-name {
+                padding-top: 50px;
+                span {
+                    color: @9;
+                    font-size: @f12;
+                }
+            }
+            .order-num {}
+            .info-btn {
+                text-align: center;
+                margin-top: 8px;
+            }
+            button {
+                width: 48%;
+                color: #fff;
+                line-height: 40px;
+                border-radius: 4px;
+            }
+            .btn1 {
+                margin-right: 6px;
+            }
+        }
+        .info-footer {
+            padding: 18px 0 20px;
+            p {
+                color: @9;
+                font-size: 12px;
+                i {
+                    width: 13px;
+                    background: url(../img/buycode.png) no-repeat;
+                    background-size: 100%;
+                    height: 11px;
+                    display: inline-block;
+                    margin-right: 4px;
+                }
+                span {
+                    color: #f15d52;
+                    font-size: 16px;
+                }
+            }
+            img {
+                width: 114px;
+            }
+        }
+    }
+}
+
+/* 付款 */
+
+.print-bar {
+    width: 96%;
+    height: 6px;
+    border-radius: 3px;
+    margin: 12px auto 0;
+    background: -webkit-linear-gradient(top, #606366, #d9dcdf);
+    background: -o-linear--gradient(top, #606366, #d9dcdf);
+    background: -moz-linear--gradient(top, #606366, #d9dcdf);
+    background: linear-gradient(top, #606366, #d9dcdf);
+}
+.payinfo {
+    position: relative;
+    top: -2px;
+    .info-wrap {
+        background: url(../img/pay_bg.png) no-repeat;
+        background-size: 100%;
+        .info {
+            padding: 14px 10px 22px;
+            border-bottom: @border;
+            img {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                color: @9;
+            }
+        }
+        .info-footer {
+            text-align: center;
+            padding: 30px 0 34px;
+            img {
+                width: 240px;
+            }
+        }
+    }
+}
+.go-pay {
+    text-align: center;
+    button {
+        line-height: 40px;
+        border-radius: 4px;
+        color: #fff;
+        width: 60%;
+    }
+}
+
+/* 付款成功 */
+
+.okpay {
+    padding: 14px 40px 20px;
+    .info-wrap {
+        background: #fff;
+        text-align: center;
+        img {
+            width: 50%;
+        }
+        .info {
+            border-bottom: @border;
+            padding-bottom: 18px;
+            h1 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+                color: @9;
+            }
+            .info-btn {
+                margin-top: 14px;
+                button {
+                    width: 30%;
+                    color: #fff;
+                    line-height: 28px;
+                    border-radius: 20px;
+                }
+                .check-order {
+                    background: -webkit-gradient(linear, left top, right bottom, from(#f57a6b), to(#f15f54));
+                    background: -o-gradient(linear, left top, right bottom, from(#f57a6b), to(#f15f54));
+                    background: -moz-gradient(linear, left top, right bottom, from(#f57a6b), to(#f15f54));
+                    background: gradient(linear, left top, right bottom, from(#f57a6b), to(#f15f54));
+                    margin-right: 6px;
+                }
+                .back-home {
+                    color: @6;
+                    background: -webkit-gradient(linear, left top, right bottom, from(#e8e8e8), to(#ddd));
+                    background: -o-gradient(linear, left top, right bottom, from(#e8e8e8), to(#ddd));
+                    background: -moz-gradient(linear, left top, right bottom, from(#e8e8e8), to(#ddd));
+                    background: gradient(linear, left top, right bottom, from(#e8e8e8), to(#ddd));
+                }
+            }
+        }
+        .info-footer {
+            padding: 18px 0 20px;
+            background: #fff;
+            p {
+                color: @9;
+                font-size: 12px;
+                i {
+                    width: 13px;
+                    background: url(../img/buycode.png) no-repeat;
+                    background-size: 100%;
+                    height: 11px;
+                    display: inline-block;
+                    margin-right: 4px;
+                }
+                span {
+                    color: #f15d52;
+                    font-size: 16px;
+                }
+            }
+            img {
+                width: 114px;
+            }
+        }
+    }
+}
+
+/* 分享红包 */
+
+.send-gift {
+    position: fixed;
+    bottom: -20px;
+    right: -6px;
+    transform: rotate(-17deg);
+    transform: -webkit-rotate(-17deg);
+    transform: -moz-rotate(-17deg);
+    transform: -o-rotate(-17deg);
+    img {
+        width: 58px;
+        animation: tada 1.2s ease-in-out 0s infinite alternate none;
+        -webkit-animation: tada 1.2s ease-in-out 0s infinite alternate none;
+        -moz-animation: tada 1.2s ease-in-out 0s infinite alternate none;
+        -o-animation: tada 1.2s ease-in-out 0s infinite alternate none;
+
+    }
+}
+
+/*@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    10%,
+    20% {
+        -webkit-transform: rotate(-3deg);
+    }
+    30%,
+    50%,
+    70%{
+        -webkit-transform: rotate(3deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+    }
+}
+*/
 /*评价页面*/
 
 .section {
@@ -355,30 +597,10 @@ header {
 
 /*公用*/
 
-.score {
-    span {
-        background-image: url(../img/gary_star_bg.png);
-        background-size: 64px;
-        background-repeat: no-repeat;
-        background-position: 0;
-        width: 64px;
-        /*height: 12px;*/
-        display: inline-block;
-        margin-left: 6px;
-        b {
-            width: 64px;
-            background-image: url(../img/orange_star_front.png);
-            background-size: 64px;
-            background-repeat: no-repeat;
-            background-position: 0;
-            height: 8px;
-            display: inline-block;
-        }
-    }
-}
 .container {
     width: 100%;
     padding: 0 14px;
+    box-sizing: border-box;
 }
 body {
     font-size: 14px;
@@ -405,4 +627,49 @@ select {
 }
 .text-center {
     text-align: center;
+}
+
+/*排名星星*/
+
+.score {
+    span {
+        background-image: url(../img/gary_star_bg.png);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: 0;
+        width: 64px;
+        /*height: 12px;*/
+        display: inline-block;
+        margin-left: 6px;
+        b {
+            width: 64px;
+            background-image: url(../img/orange_star_front.png);
+            background-size: 64px;
+            background-repeat: no-repeat;
+            background-position: 0;
+            height: 8px;
+            display: inline-block;
+        }
+    }
+}
+
+/*按钮*/
+
+.btn1 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+    background: -o-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+    background: -moz-gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+    background: gradient(linear, left top, right bottom, from(#f57a6b), to(#dd594e));
+}
+.btn2 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+    background: -o-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+    background: -moz-gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+    background: gradient(linear, left top, right bottom, from(#ffca4d), to(#ffae3a));
+}
+.shadow {
+    box-shadow: @shadow;
+}
+.bottom-border {
+    border-bottom: @border;
 }
