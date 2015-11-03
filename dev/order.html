@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>预订/秒杀</title>
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="background:#ecedee;" ng-app="order" ng-controller="orderCtrl" ng-cloak>
+    <!-- 顶部 -->
+<!--     <div class="shop-banner">
+        <span class="shadow"></span>
+        <img class="shop-img" src="img/shop_banner.png" alt="">
+        <div class="info container">
+            <div class="fl">
+                <a href="">
+                    <img src="img/arrow_left_white.png" alt="">
+                </a>
+            </div>
+            <h1>音浪中大银泰店</h1>
+        </div>
+    </div> -->
+    <!-- 秒杀头部 -->
+    <div class="shop-banner sec-kill">
+        <span class="shadow"></span>
+        <img class="shop-img" src="img/shop_banner.png" alt="">
+        <div class="info container">
+            <div class="fl">
+                <a href="">
+                    <img src="img/arrow_left_white.png" alt="">
+                </a>
+            </div>
+            <h1>音浪中大银泰店</h1>
+            <small>仅剩6单</small>
+            <p>68<span>元起</span></p>
+            <span class="fl"><i></i>限时秒杀</span>
+            <span class="fr"><i></i>18:01:03</span>
+        </div>
+    </div>
+    <div class="note text-center">
+        <i></i>
+        <span>在线预订  免排队  保证有房</span>
+    </div>
+    <div class="slide-container pick-data">
+        <ul>
+            <li>今天 9.1</li>
+            <li  class="picked">明天 9.2</li>
+            <li>后天 9.3</li>
+            <li>9.4</li>
+            <li>9.5</li>
+            <li>9.6</li>
+            <li>9.7</li>
+            <li>9.8</li>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div class="slide-container picker-time">
+        <ul>
+            <li class="picked">10:00-16:00</li>
+            <li>16:00-23:00</li>
+            <li>23:00-次日凌晨</li>
+        </ul>
+    </div>
+    <div class="pick-box">
+        <div class="container">
+            <div class="box-style clearfix">
+                <div class="box-header">
+                    <h2>小包 <span>2-4人</span></h2>
+                    <span class="fr">剩余2间</span>
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <button class="fr waves-effect waves-light" ng-click="showOrderInfo($event)">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <i>特惠</i>
+                    <button class="fr waves-effect waves-light" ng-click="showOrderInfo($event)">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+            </div>
+            <div class="box-style clearfix">
+                <div class="box-header">
+                    <h2>中包 <span>4-8人</span></h2>
+                    <!-- <span class="fr">剩余2间</span> -->
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <i class="quickbuy">秒杀</i>
+                    <button class="fr waves-effect waves-light" ng-click="showOrderInfo($event)">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <button class="fr waves-effect waves-light" ng-click="showOrderInfo($event)">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+            </div>
+            <div class="box-style clearfix">
+                <div class="box-header">
+                    <h2>大包 <span>8-12人</span></h2>
+                    <span class="fr">满</span>
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <button class="disabled fr">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+                <div class="box-content clearfix">
+                    <span class="fl package">4小时威龙解百纳红酒包套</span>
+                    <!-- <i>特惠</i> -->
+                    <button class="disabled fr">预订</button>
+                    <span class="fr box-price">¥268.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explain">
+        <div class="container">
+            <h2><i></i>活动说明</h2>
+            <p>1. 若提前结束消费，仍将按照完整包唱时间计费。
+                <br>2. 付款后您预订的包房将会为您保留至时段结束。
+                <br>3. 您预订您期望的房间主题商家会根据客户需要尽量满足，请以商  家最终安排为准。
+                <br>4. 包厢的时段如遇商家无法安排，预订款项将退回您的付款账户。
+            </p>
+        </div>
+    </div>
+    <div class="explain">
+        <div class="container">
+            <h2><i></i>预订说明</h2>
+            <p>1. 若提前结束消费，仍将按照完整包唱时间计费。
+                <br>2. 付款后您预订的包房将会为您保留至时段结束。
+                <br>3. 您预订您期望的房间主题商家会根据客户需要尽量满足，请以商  家最终安排为准。
+                <br>4. 包厢的时段如遇商家无法安排，预订款项将退回您的付款账户。
+            </p>
+        </div>
+    </div>
+    <div class="explain">
+        <div class="container">
+            <h2><i></i>退款说明</h2>
+            <p>开唱时间前申请退款，可退全部金额；
+                <br>开唱时间后30分钟内申请退款，
+                <br>可退80%的金额；超过开唱时间后30分钟，不予退款。
+            </p>
+        </div>
+    </div>
+</body>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="lib/materialize/js/materialize.min.js"></script>
+<!-- angular Material -->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-animate/angular-animate.min.js"></script>
+<script src="lib/angular-aria/angular-aria.min.js"></script>
+<script src="lib/angular-material/angular-material.min.js"></script>
+<script src="js/order.js"></script>
+</html>
